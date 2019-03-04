@@ -1,0 +1,36 @@
+Доброго дня!
+
+Заводим виртуальную машину:
+1. Качаем VirtualBox: https://download.virtualbox.org/virtualbox/6.0.4/Virt..
+2. Качаем VirtualBox Guest Additions: https://download.virtualbox.org/virtualbox/6.0.4/VBox..
+3. Устанавливаем VirtualBox к себе на машину
+4. Качаем образ виртуальной машины: https://www.dropbox.com/sh/adasxxomwrhemua/AADMRUz_kR..
+5. Распаковываем архив - получаем папку WDB
+6. Запускаем VirtualBox
+7. Выбираем в верхнем меню Machine/Add
+8. Выбираем файл WDB.vbox
+9. Создаем на компьютере папку с будущим проектом (например wdb-code)
+10. Выбираем виртуальную машину WDB и жмем "Настройки"(Settings)
+11. В пункте Storage(Хранилище), для Controller: IDE выбираем диск VBoxGuestAdditions_6.0.4.iso
+12. В пункте "Сеть"(Network) выбираем "Bridged Adapter" ("Мост")
+13. В пункте "Общие папки"(Shared Folders) добавляем общую папку: путь указываем к созданной вами папке wdb-code, а имя - code
+14. В файле hosts (C:\Windows\System32\drivers\etc\hosts) прописываем строчки (необходимо поискать в интернете как это правильно делается, в разных версиях windows по разному):
+192.168.0.111 wdb.virtual
+192.168.0.111 pma.wdb.virtual
+15. Запускаем виртуальную машину
+
+Чтобы убедиться, что все прошло хорошо, набираем в браузере http://pma.wdb.virtual. Вы должны увидеть приложенный экран
+
+После запуска (через пару-тройку минут) вам будут доступны адреса:
+* http://wdb.virtual - ваш пустой проект
+* http://pma.wdb.virtual - phpmyadmin(чуть позже объясню)
+
+Следующие данный понадобятся позже:
+
+Виртуальная машина
+Пользователь: virtual
+Пароль: virtual
+
+Phpmyadmin:
+Пользователь: root
+Пароль: virtual
