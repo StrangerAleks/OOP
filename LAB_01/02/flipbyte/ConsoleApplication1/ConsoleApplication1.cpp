@@ -3,18 +3,28 @@
 #include <string>
 using namespace std;
 
-char BIT(const char N) {return 1 << N;}
+unsigned char BIT(const unsigned char N) {return 1 << N;}
 
 signed short strToByte(const char *p)
 {
 	signed short Byte = 0;
-	while (*p != '\0')	{		if ((*p >= '0') && (*p <= '9'))		{			Byte = Byte * 10 + (unsigned)*p - (unsigned) '0';			if (Byte > 255) return (-1);		}		else			return (-1);		p++;	}
+	while (*p != '\0')
+	{
+		if ((*p >= '0') && (*p <= '9'))
+		{
+			Byte = Byte * 10 + (unsigned)*p - (unsigned) '0';
+			if (Byte > 255) return (-1);
+		}
+		else
+			return (-1);
+		p++;
+	}
 	return Byte;
 }
 
-char flipbyte(const char byte)
+unsigned char flipbyte(const unsigned char byte)
 {
-	char result = 0;
+	unsigned char result = 0;
 	for (char i = 0; i < 8; i++)
 	{
 		if (byte & BIT(i)) result |= BIT(7 - i);
@@ -43,7 +53,7 @@ int main(int argc, char* argv[])
 			return 1;
 		else
 		{
-			unsigned short byte = flipbyte(result) & 0x00FF;
+			unsigned short byte = flipbyte(result); // &0x00FF;
 			cout << byte;
 			return 0;
 		}
