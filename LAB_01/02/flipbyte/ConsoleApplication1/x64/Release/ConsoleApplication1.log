@@ -1,0 +1,7 @@
+﻿  pch.cpp
+  ConsoleApplication1.cpp
+c:\repos\lab_01\02\flipbyte\consoleapplication1\consoleapplication1.cpp(45): warning C4244: аргумент: преобразование "short" в "const char", возможна потеря данных
+  Создание кода
+  Создание кода завершено
+  All 15 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  ConsoleApplication1.vcxproj -> C:\REPOS\LAB_01\02\flipbyte\x64\Release\ConsoleApplication1.exe

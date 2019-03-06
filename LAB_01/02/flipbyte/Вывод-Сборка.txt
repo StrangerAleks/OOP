@@ -1,0 +1,6 @@
+﻿1>------ Сборка начата: проект: ConsoleApplication1, Конфигурация: Debug Win32 ------
+1>ConsoleApplication1.cpp
+1>c:\repos\lab_01\02\flipbyte\consoleapplication1\consoleapplication1.cpp(46): warning C4244: аргумент: преобразование "short" в "const char", возможна потеря данных
+1>ConsoleApplication1.vcxproj -> C:\REPOS\LAB_01\02\flipbyte\Debug\ConsoleApplication1.exe
+1>Сборка проекта "ConsoleApplication1.vcxproj" завершена.
+========== Сборка: успешно: 1, с ошибками: 0, без изменений: 0, пропущено: 0 ==========
